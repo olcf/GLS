@@ -1,0 +1,18 @@
+---
+name: "gls"
+arch: "${ARCH}"
+platform: "linux"
+version: "${VERSION}"
+release: "${RELEASE}"
+provides:
+- gls
+depends:
+- gpfs.base
+maintainer: "James Wynne <wynnejr@ornl.gov>"
+description: |
+  gls is a tool that aims to provide an ls like mechanism to provide insight into what storage pool a file resides by utilizing custom coloring schemes
+homepage: "https://gitlab.ccs.ornl.gov/wyn/gls"
+license: "MIT"
+contents:
+- src: ./gls
+  dst: /usr/local/bin/gls
